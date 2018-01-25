@@ -107,31 +107,3 @@ footer {
     clear: both;
     background-color: palegoldenrod;
 }
-
-body {
-    text-align: center;
-    padding: 0;
-    margin: 1px 0 0;
-    font: normal normal 11px Arial, Helvetica, Sans-serif;
-    color: #666;
-}
-
-a {
-    color: #777;
-}
-
-    a:hover {
-        color: #A77749;
-    }
-
-
-
-.sidebar {
-    position: absolute;
-    top: 156px;
-    left: 525px;
-    width: 175px;
-    background: #FD9453;
-    border-top: 1px solid #fff;
-    color: #fff;
-}
