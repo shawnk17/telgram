@@ -33,3 +33,105 @@
         display: none;
     }
 }
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Alice');
+
+body {
+    background-color: rgba(135, 206, 250, 0.397);
+    font-family: 'Karla', sans-serif;
+    font-family: 'Alice', serif;
+    margin: auto;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.navbar {
+    padding: .5rem;
+    margin: 1rem;
+}
+
+.panel {
+    padding: .5rem;
+    margin-left: 2rem;
+}
+
+.btn {
+    margin-top: .5rem;
+}
+
+.img-thumbnail {
+    margin-right: 1rem;
+}
+
+footer {
+    padding: 0%;
+    clear: both;
+    background-color: palegoldenrod;
+}
+
+body {
+    text-align: center;
+    padding: 0;
+    margin: 1px 0 0;
+    font: normal normal 11px Arial, Helvetica, Sans-serif;
+    color: #666;
+}
+
+a {
+    color: #777;
+}
+
+    a:hover {
+        color: #A77749;
+    }
+
+
+
+.sidebar {
+    position: absolute;
+    top: 156px;
+    left: 525px;
+    width: 175px;
+    background: #FD9453;
+    border-top: 1px solid #fff;
+    color: #fff;
+}
