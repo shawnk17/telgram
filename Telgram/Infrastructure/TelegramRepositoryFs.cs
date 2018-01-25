@@ -25,7 +25,11 @@ namespace Infrastructure
             if (_telegrams == null)
             {
                 _telegrams = LoadFile();
-                _nextId = _telegrams.Max(t => t.Id) + 1;
+
+                if (_telegrams.Count > 0)
+                {
+                    _nextId = _telegrams.Max(t => t.Id) + 1;
+                }
             }
         }
         public void Add(Telegram newTelegram)
@@ -79,17 +83,16 @@ namespace Infrastructure
             }
             catch (Exception ex)
             {
-                // TODO Log the exception
-
-                return new List<Telegram>();
+                // TODO Log the exception 
             }
+            return new List<Telegram>();
         }
 
         public void SaveFile()
         {
             try
             {
-                if(!Directory.Exists(PATH))
+                if (!Directory.Exists(PATH))
                 {
                     Directory.CreateDirectory(PATH);
                 }

@@ -11,6 +11,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Telgram.Data;
 using Telgram.Models;
 using Telgram.Services;
+using ApplicationCore.Entities;
+using ApplicationCore.Interfaces;
+using Infrastructure;
+
 
 namespace Telgram
 {
@@ -35,6 +39,7 @@ namespace Telgram
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddScoped<ITelegramRepository, TelegramRepositoryFs>();
 
             services.AddMvc();
         }
